@@ -10,3 +10,7 @@ Instructions:
 5. Edit rows 6,7,8,9, 45 and 46 to configure your variables.
 6. Once you get this working, configure a trigger for fetchAndWriteData to automate it.
 7. If you need to call more than one endpoint into the same sheet, copy and paste the fetchAndWriteData function and adjust accordingly.
+
+*Note
+
+This is intended to be used with default LIST API requests. If you need to add any parameters or use a GET, POST or PATCH, you will need to update the request.
