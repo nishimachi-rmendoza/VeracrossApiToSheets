@@ -43,7 +43,7 @@ function getAccessToken() {
   
     //Set your Sheet name and endpoint url below
     var sheetName = 'sheet_name'; // Replace with your desired sheet name
-    var baseUrl = 'https://api.veracross.com/your_school_here/v3/endpointname'; //replace your_school_here and endpointname. endpoint example "students" for the students table. Usually at the top of the api documentation - https://api-docs.veracross.com/docs/docs/d50279dec5fd1-list-students
+    var baseUrl = 'https://api.veracross.com/your_school_here/v3/endpointname'; // Replace your_school_here and endpointname. endpoint example "students" for the students table. Usually at the top of the api documentation - https://api-docs.veracross.com/docs/docs/d50279dec5fd1-list-students
     var options = {
       'method': 'get',
       'headers': {
@@ -64,7 +64,6 @@ function getAccessToken() {
       return;
     }
   
-    // Proceed to write the data to the sheet
     var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
     if (!sheet) {
       Logger.log('Sheet not found');
