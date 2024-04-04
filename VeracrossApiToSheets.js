@@ -86,11 +86,14 @@ function getAccessToken() {
     sheet.getRange(1, 1, maxRows, lastColumn).clearContent(); 
     sheet.getRange(1, 1, values.length, numberOfColumns).setValues(values);
   
-    // Add the "Time Synced" column
+    // Add the "Time Synced" column immediately after the imported data
     var currentTime = new Date();
     var formattedTime = Utilities.formatDate(currentTime, Session.getScriptTimeZone(), "yyyy-MM-dd'T'HH:mm:ss'Z'");
     sheet.getRange(1, lastColumn).setValue("Time Synced"); 
     sheet.getRange(2, lastColumn).setValue(formattedTime);
   }
+
+    //Rod Mendoza @ Nishimachi International School
+    //rmendoza@nishimachi.ac.jp
   
   
