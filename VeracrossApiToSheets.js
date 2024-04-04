@@ -1,11 +1,11 @@
 // This script requires editing in rows 6,7,8,9, 45 and 46 to configure your variables
-// Once you get this working, remember to configure a trigger for writeData1 to automate it
+// Once you get this working, remember to configure a trigger for fetchAndWriteData to automate it
 // Copy and paste fetchAndWriteData, then adjust accordingly if you want more endpoints in this script. Make sure to add all scopes in line 9.
 
 function getAccessToken() {
     var tokenUrl = 'https://accounts.veracross.com/your_school_here/oauth/token'; // Replace your_school_here with your schools route
-    var clientId = 'aaa111qqq222www333'; // Replace with your client ID from your OAuth app
-    var clientSecret = 'ppp999jjj777hhh555ppp999jjj777hhh555'; // Replace with your client secret from your OAuth App
+    var clientId = 'clientid_here'; // Replace with your client ID from your OAuth app
+    var clientSecret = 'clientsecret_here'; // Replace with your client secret from your OAuth App
     var scope = 'table:list'; // Specify the scopes from your OAuth App. Separated by commas if more than one. For example "students:list"
     var payload = {
       'grant_type': 'client_credentials',
